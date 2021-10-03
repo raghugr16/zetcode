@@ -1,2 +1,2 @@
 # zetcode
-HttpURLConnection Multipart/form data example
+HttpURLConnection file upload Multipartform data example
