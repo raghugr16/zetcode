@@ -51,7 +51,7 @@ public class MyController {
 	}
 
 	@PostMapping(value = "/saveEmployee" , consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-	public ResponseEntity<String> saveEmployee(@RequestBody Employee employee){
+	public ResponseEntity<String> saveEmployee(@ModelAttribute Employee employee){
 		logger.debug("Save Employee");
 		try {
 				employee.getMultipartFile().transferTo(new File("/Users/raghavendragr/Desktop/Raghu/File/output.png"));
